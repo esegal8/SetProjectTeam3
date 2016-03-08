@@ -1,6 +1,7 @@
 *.class
 package.bluej
-DS_Store
+.DS_Store
+.*ctxt
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
