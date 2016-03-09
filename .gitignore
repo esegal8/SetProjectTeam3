@@ -1,5 +1,4 @@
 *.class
-package.bluej
 .DS_Store
 .*ctxt
 # Mobile Tools for Java (J2ME)
