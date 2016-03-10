@@ -19,13 +19,20 @@ import java.util.*;
 
 public class Deck
 {
+   ArrayList<Card> deck;
     public Deck()
     {
-        ArrayList<Card> deck= new ArrayList<Card>();
+        deck= new ArrayList<Card>();
     }
     public String toString()
     {
-        return "";
+        String ret="";
+        Iterator<Card> iter= deck.iterator();
+        while (iter.hasNext())
+        {
+            ret += System.out.print(iter.next().toString()+ " ");
+        }
+        return ret;
     }
    
   
