@@ -54,7 +54,7 @@ public class Deck
         Iterator<Card> iter= deck.iterator();
         while (iter.hasNext())
         {
-            ret += System.out.print(iter.next().toString()+ "\n");
+            ret += System.out.print(iter.next()+ "\n");
         }
         return ret;
     }
