@@ -19,15 +19,14 @@ import java.util.*;
 
 public class Deck
 {
+    private ArrayList<Card> deck;
     public Deck()
     {
-
         ArrayList<Card> deck= new ArrayList<Card>();
-
     }
     public Deck(int numCard)
     {
-        
+        ArrayList<Card> deck= new ArrayList<Card>(numCard);
     }
     public int getNumCards()
     {
@@ -36,9 +35,9 @@ public class Deck
     public boolean isEmpty()
     {
     }
-    public void add (Card card)
+    public void add (Card c)
     {
-        
+        deck.add(0,c);
     }
     public Card takeTop()
     {
