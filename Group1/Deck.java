@@ -23,6 +23,10 @@ public class Deck
     {
         ArrayList<Card> deck= new ArrayList<Card>();
     }
+    public String toString()
+    {
+        return "";
+    }
    
   
 }
