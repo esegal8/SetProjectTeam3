@@ -47,13 +47,13 @@ public class Deck
     public void add (Card c)
     {
         deck.add(0,c);
-        shuffle();
+        //shuffle();
     }
 
     public Card takeTop()
     {
-        Card random= deck.get(0);
-        return random;
+        Card top= deck.get(0);
+        return top;
 
     }
 

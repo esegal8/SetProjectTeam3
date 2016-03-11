@@ -25,4 +25,9 @@ public class Card implements Comparable<Card>
             return true;
         return false;
     }
+    public String toString()
+    {
+        String represent= ""+this.getId();
+        return represent;
+    }
 }
