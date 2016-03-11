@@ -16,7 +16,7 @@
 */
 
 import java.util.*;
-
+import java.math.*;
 public class Deck
 {
     private ArrayList<Card> deck;
@@ -30,10 +30,13 @@ public class Deck
     }
     public int getNumCards()
     {
-        return 1;
+        return deck.size();
     }
     public boolean isEmpty()
     {
+        if (deck.size()==0)
+            return true;
+        return false;
     }
     public void add (Card c)
     {
@@ -41,9 +44,19 @@ public class Deck
     }
     public Card takeTop()
     {
+        return deck.remove(0);
     }
     public void shuffle()
     {
+        //for (int x=0;x<200;x++)
+        //{
+            //int temp=(int)(Math.random()*81);
+            //Card tempC = deck.get(temp);
+            //int temp2 = (int)(Math.random()*81);
+            //Card tempC2 = deck.get(temp2);
+            
+        //}
+        Collection.shuffle(deck);
     }
     public void sort()
     {
