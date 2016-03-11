@@ -25,7 +25,7 @@ public class TestDeck
         
         System.out.println(testDeck);
         
-        Iterator<Card> iter= testDeck.iterator<Card>();
+        Iterator<Card> iter= testDeck.iterator();
         while (iter.hasNext())
         {
             System.out.println(iter.remove);
