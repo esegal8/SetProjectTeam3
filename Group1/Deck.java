@@ -42,6 +42,8 @@ public class Deck
     }
     public Card takeTop()
     {
+        Card random= new Card(1);
+        return random;
       
     }
     public void shuffle()

@@ -5,9 +5,9 @@ public class TestDeck
     {
         Deck testDeck= new Deck();
         
-        Card testCard= new Card(); //Card class not written at this point
-        Card testCard1= new Card();
-        Card testCard2= new Card();
+        Card testCard= new Card(1); //Card class not written at this point
+        Card testCard1= new Card(2);
+        Card testCard2= new Card(3);
         
         testDeck.add(testCard);
         testDeck.add(testCard1);
@@ -25,7 +25,7 @@ public class TestDeck
         
         System.out.println(testDeck);
         
-        Iterator<Card> iter= testDeck.iterator();
+        Iterator<Card> iter= testDeck.iterator<Card>();
         while (iter.hasNext())
         {
             System.out.println(iter.remove);
