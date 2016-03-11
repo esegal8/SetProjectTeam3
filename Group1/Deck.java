@@ -34,6 +34,7 @@ public class Deck
     }
     public boolean isEmpty()
     {
+        return true;
     }
     public void add (Card c)
     {
@@ -41,6 +42,7 @@ public class Deck
     }
     public Card takeTop()
     {
+      
     }
     public void shuffle()
     {
@@ -48,17 +50,17 @@ public class Deck
     public void sort()
     {
     }
-    public String toString()
-    {
-        String ret="";
-        Iterator<Card> iter= deck.iterator();
-        while (iter.hasNext())
-        {
-            ret += System.out.print(iter.next()+ "\n");
-        }
-        return ret;
+    //public String toString()
+    //{
+       // String ret="";
+        //Iterator<Card> iter= deck.iterator();
+        ///while (iter.hasNext())
+        //{
+        //    ret += System.out.print(iter.next()+ "\n");
+        //}
+       // return ret;
 
-    }
+    //}
    
   
 }
