@@ -1,6 +1,7 @@
 //Elliot and Varun
 public class ZetCard extends Card
 {
+    private int ID;
     private int num;
     private int shape;
     private int fill;
@@ -10,6 +11,7 @@ public class ZetCard extends Card
     private final String[] colorA = {null,"red","green","blue"};
     public ZetCard(int n, int s, int f, int c)
     {
+        super(ID);//call parent constructor
         num = n;
         shape = s;
         fill = f;
