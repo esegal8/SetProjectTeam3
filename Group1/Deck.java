@@ -41,20 +41,15 @@ public class Deck
     public void add (Card c)
     {
         deck.add(0,c);
-<<<<<<< HEAD
-        //shuffle();
-=======
->>>>>>> d67cd6b3e476862e74a2db826120937322ec2b86
+
     }
     public Card takeTop()
     {
-<<<<<<< HEAD
-        Card top= deck.get(0);
-        return top;
 
-=======
+
+
         return deck.remove(0);
->>>>>>> d67cd6b3e476862e74a2db826120937322ec2b86
+
     }
     public void shuffle()
     {
@@ -66,7 +61,7 @@ public class Deck
             //Card tempC2 = deck.get(temp2);
             
         //}
-        Collection.shuffle(deck);
+        Collections.shuffle(deck);
     }
     public void sort()
     {
@@ -77,7 +72,7 @@ public class Deck
         Iterator<Card> iter= deck.iterator();
         while (iter.hasNext())
         {
-            ret += System.out.print(iter.next()+ "\n");
+            ret = ret + iter.next().toString();
         }
         return ret;
 

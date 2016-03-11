@@ -1,6 +1,6 @@
 import java.util.*;
 
-public abstract class Card implements Comparable<Card>
+public class Card implements Comparable<Card>
 
 {
     private int ID;
@@ -13,9 +13,14 @@ public abstract class Card implements Comparable<Card>
     {
         return ID;
     }
-    public boolean equals (Object other)
+    public int compareTo(Card other)
     {
-        if (this.compareTo((Card)other)!=1)
+        int x= this.compareTo(other);
+        return x;
+    }
+    public boolean equals (Card other)
+    {
+        if (this.compareTo(other)!=0)
         {
             return false;
         }

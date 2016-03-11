@@ -1,7 +1,8 @@
 //Elliot and Varun
+import java.util.*;
 public class ZetDeck extends Deck
 {
-    private list<Card> deck = new ArrayList<Card>();
+    private List<Card> deck = new ArrayList<Card>();
     
     public ZetDeck()
     {
