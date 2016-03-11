@@ -1,6 +1,6 @@
 import java.util.*;
 
-public abstract class Card implements Comparable<Card>
+public class Card implements Comparable<Card>
 
 {
     private int ID;

@@ -56,7 +56,7 @@ public class Deck
             //Card tempC2 = deck.get(temp2);
             
         //}
-        Collection.shuffle(deck);
+        Collections.shuffle(deck);
     }
     public void sort()
     {
