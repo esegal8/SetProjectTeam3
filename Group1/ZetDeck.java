@@ -6,6 +6,7 @@ public class ZetDeck extends Deck
     
     public ZetDeck()
     {
+        Card c;
         for (int x=0;x<3;x++)
         {
             for(int y=0;y<3;y++)
@@ -14,7 +15,8 @@ public class ZetDeck extends Deck
                 {
                     for(int p=0;p<3;p++)
                     {
-                        deck.add(ZetCard(x,y,z,p));
+                        c = new ZetCard(x,y,z,p);
+                        deck.add(c);
                     }
                 }
             }
