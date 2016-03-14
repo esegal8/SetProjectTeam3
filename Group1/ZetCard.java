@@ -11,7 +11,10 @@ public class ZetCard extends Card
     private final String[] colorA = {null,"red","green","blue"};
     public ZetCard(int n, int s, int f, int c)
     {
+
         super(0);//call parent constructor
+
+
         num = n;
         shape = s;
         fill = f;
