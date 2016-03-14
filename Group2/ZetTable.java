@@ -41,7 +41,7 @@ with that card and advance both indices.
 public class ZetTable
 {
     private final int dfltOpenCards = 12;
-    ArrayList<ZetCards> openCards = new ArrayList<ZetCards>();
+    ArrayList<ZetCard> openCards = new ArrayList<ZetCard>();
     ZetDeck deck = new ZetDeck();
     /**
      *  Creates a new deck and opens dfltOpenCards cards.
@@ -51,7 +51,9 @@ public class ZetTable
         deck.shuffle();
         for(int i=0; i< dfltOpenCards; i++)
         {
-            openCards.add(deck.takeTop());
+            Card TempCard=deck.takeTop();
+            ZetCard TempCard;
+            openCards.add();
         }
     }
 
