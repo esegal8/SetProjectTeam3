@@ -5,7 +5,7 @@ public class TestDeck
     {
         Deck testDeck= new Deck();
         
-        Card testCard= new Card(1); //Card class not written at this point
+        Card testCard= new Card(1); 
         Card testCard1= new Card(2);
         Card testCard2= new Card(3);
 
