@@ -51,9 +51,9 @@ public class ZetTable
         deck.shuffle();
         for(int i=0; i< dfltOpenCards; i++)
         {
-            Card TempCard=deck.takeTop();
-            ZetCard TempCard;
-            openCards.add();
+            ZetCard TempCard=(ZetCard) deck.takeTop();
+            TempCard= (ZetCard) TempCard;
+            openCards.add(TempCard);
         }
     }
 
@@ -103,50 +103,51 @@ public class ZetTable
     public int[] findZet()
     { 
         int size=openCards.size();
-        for(i=0;i<size-2;i++){
-            for(j=i;j<size-1;j++){
-                for(x=j;x<size;x++){
+        for(int i=0;i<size-2;i++){
+            for(int j=i;j<size-1;j++){
+                for(int x=j;x<size;x++){
                     int num=0;
                     int shape=0;
                     int color=0;
                     int fill=0;
-                    zetCard fCard=openCards.get(i);
-                    zetCard sCard=openCards.get(j);
-                    zetCard tCard=openCards.get(x);
-                    int x=fCard.getNumber();
+                    ZetCard fCard=openCards.get(i);
+                    ZetCard sCard=openCards.get(j);
+                    ZetCard tCard=openCards.get(x);
+                    int a=fCard.getNumber();
                     int y=sCard.getNumber();
                     int z=tCard.getNumber();
-                    if(x==y && y==z || x!=y && y!=z && x!=z){
+                    if(a==y && y==z || a!=y && y!=z && a!=z){
                         num=1;
                     }
-                    int x=fCard.getShape();
-                    int y=sCard.getShape();
-                    int z=tCard.getShape();
-                    if(x==y && y==z || x!=y && y!=z && x!=z){
+                    a=fCard.getShape();
+                    y=sCard.getShape();
+                    z=tCard.getShape();
+                    if(a==y && y==z || a!=y && y!=z && a!=z){
                         shape=1;
                     }
-                    int x=fCard.getFill();
-                    int y=sCard.getFill();
-                    int z=tCard.getFill();
-                    if(x==y && y==z || x!=y && y!=z && x!=z){
+                    a=fCard.getFill();
+                    y=sCard.getFill();
+                    z=tCard.getFill();
+                    if(a==y && y==z || a!=y && y!=z && a!=z){
                         fill=1;
                     }
-                    int x=fCard.getColor();
-                    int y=sCard.getColor();
-                    int z=tCard.getColor();
-                    if(x==y && y==z || x!=y && y!=z && x!=z){
+                    a=fCard.getColor();
+                    y=sCard.getColor();
+                    z=tCard.getColor();
+                    if(a==y && y==z || a!=y && y!=z && a!=z){
                         color=1;
                     }
                     if(num==1 && shape==1 && fill==1 && color==1){
-                        int[] set=new set(3);
-                        set[1]=fCard;
-                        set[2]=sCard;
-                        set[3]=tCard;
+                        int[] set=new int[3];
+                        set[1]=i;
+                        set[2]=j;
+                        set[3]=x;
                         return set;
                     }
                 }
             }
         }
+        return null;
     }
 
     /**
@@ -155,9 +156,15 @@ public class ZetTable
      */
     public boolean open3Cards()
     {
-        for(int j=0; j<=2; j++)
-        {
-            openCards.add(deck.takeTop());
+        if(deck.getNumCards()<2){
+            return false;
+        }
+        else{
+            for(int j=0; j<=2; j++)
+            {
+                openCards.add((ZetCard) deck.takeTop());
+            }
+            return true;
         }
     }
 
@@ -181,7 +188,7 @@ public class ZetTable
     public void compactOpenCards()
     {
         int backInd=openCards.size()-1;
-        for(i=0;i<dfltOpenCards;i++){
+        for(int i=0;i<dfltOpenCards;i++){
             if(openCards.get(i)==null){
                 openCards.set(i,openCards.get(backInd));
                 backInd--;
@@ -199,13 +206,14 @@ public class ZetTable
     public String toString()
     {
         String s="";
-        for(i=0;i<openCards.size();i++){
-           if(openCards(i)==null){
-               s+="null: ";
+        for(int i=0;i<openCards.size();i++){
+            if(openCards.get(i)==null){
+                s+="null: ";
             }
             else{
                 s+=openCards.get(i).toString();
             }
         }
+        return s;
     }
 }
