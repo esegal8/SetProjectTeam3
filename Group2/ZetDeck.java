@@ -14,7 +14,7 @@ public class ZetDeck extends Deck
                 {
                     for(int p=0;p<3;p++)
                     {
-                        deck.add(ZetCard (x,y,z,p));
+                        deck.add(ZetCard(x,y,z,p));
                     }
                 }
             }
