@@ -74,11 +74,13 @@ public class ZetTable
      */
     public ZetCard getOpenCard(int i)
     {
-        if(openCards.get(i)==null)
+        if(i>0 && i<openCards.size())//openCards.get(i)==null
         {
+            return openCards.get(i);
+        }
+        else{
             return null;
         }
-        return openCards.get(i);
     }
 
     /**

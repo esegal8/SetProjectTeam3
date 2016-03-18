@@ -63,6 +63,7 @@ public class Deck
     }
     public void sort()
     {
+        Collections.sort(deck);
     }
     public String toString()
     {
