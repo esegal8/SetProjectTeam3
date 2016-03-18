@@ -74,7 +74,7 @@ public class ZetTable
      */
     public ZetCard getOpenCard(int i)
     {
-        if(i>0 && i<openCards.size())//openCards.get(i)==null
+        if(i>=0 && i<openCards.size())//openCards.get(i)==null
         {
             return openCards.get(i);
         }
@@ -141,9 +141,9 @@ public class ZetTable
                     }
                     if(num==1 && shape==1 && fill==1 && color==1){
                         int[] set=new int[3];
-                        set[1]=i;
-                        set[2]=j;
-                        set[3]=x;
+                        set[0]=i;
+                        set[1]=j;
+                        set[2]=x;
                         return set;
                     }
                 }
