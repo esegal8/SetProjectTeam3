@@ -17,6 +17,7 @@
 
 import java.util.*;
 import java.math.*;
+import java.util.ArrayList;
 public class Deck
 {
     private ArrayList<Card> deck;
@@ -45,9 +46,6 @@ public class Deck
     }
     public Card takeTop()
     {
-
-
-
         return deck.remove(0);
 
     }

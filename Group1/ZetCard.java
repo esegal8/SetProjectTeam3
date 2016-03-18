@@ -7,7 +7,7 @@ public class ZetCard extends Card
     private int fill;
     private int color;
     private final String[] shapeA = {null,"oval","squiggle","diamond"};
-    private final String[] fillA = {null,"outlined","solid","stripped"};
+    private final String[] fillA = {null,"outlined","solid","striped"};
     private final String[] colorA = {null,"red","green","blue"};
     public ZetCard(int n, int s, int f, int c)
     {
