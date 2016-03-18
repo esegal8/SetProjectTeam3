@@ -45,9 +45,6 @@ public class Deck
     }
     public Card takeTop()
     {
-
-
-
         return deck.remove(0);
 
     }
@@ -65,6 +62,7 @@ public class Deck
     }
     public void sort()
     {
+        Collections.sort(deck);
     }
     public String toString()
     {
