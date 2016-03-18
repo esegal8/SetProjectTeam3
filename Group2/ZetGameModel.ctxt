@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=
+comment0.target=ZetGameModel()
+comment0.text=\n\ \ Creates\ a\ configuration\ for\ a\ new\ game.\n
+comment1.params=
+comment1.target=void\ newGame()
+comment1.text=\n\ \ Creates\ a\ new\ Set\ table\ and\ clears\ "picked"\ cards.\n
+comment2.params=
+comment2.target=ZetTable\ getTable()
+comment2.text=\n\ \ Returns\ the\ card\ table\ for\ this\ game.\n\ \ @return\ the\ card\ table\ for\ this\ game.\n
+comment3.params=
+comment3.target=int[]\ getPickedCards()
+comment3.text=\n\ \ Returns\ an\ array\ of\ indices\ of\ the\ picked\ cards.\n\ \ @return\ an\ array\ of\ indices\ of\ the\ picked\ cards.\n
+comment4.params=i
+comment4.target=boolean\ pickCard(int)
+comment4.text=\n\ \ "Picks"\ the\ specified\ open\ card.\ \ The\ card\ is\ not\ picked\ if\n\ \ 3\ or\ more\ cards\ are\ already\ picked,\ if\ i\ <\ 0,\ or\ if\n\ \ table.getOpenCard(i)\ \=\=\ null.\n\ \ @param\ i\ index\ of\ the\ card\ to\ be\ picked.\n\ \ @return\ true\ if\ successful\ at\ picking\ the\ card;\ false\ otherwise.\n
+comment5.params=
+comment5.target=int[]\ findZet()
+comment5.text=\n\ \ Finds\ a\ "set"\ on\ the\ table.\n\ \ @return\ an\ array\ of\ the\ indices\ of\ the\ three\ "set"\ cards,\n\ \ or\ null\ if\ no\ sets\ are\ found.\n
+comment6.params=
+comment6.target=boolean\ removeZet()
+comment6.text=\n\ \ Removes\ picked\ cards\ from\ the\ table\ if\ they\ form\ a\ set.\ \ If\ the\ set\n\ \ is\ removed\ and\ there\ are\ not\ enough\ open\ cards\ left,\ opens\n\ \ three\ more\ cards.\n\ \ @return\ true\ if\ the\ picked\ cards\ form\ a\ set\ and\ are\ successfully\n\ \ removed;\ false\ otherwise.\n
+comment7.params=
+comment7.target=boolean\ open3Cards()
+comment7.text=\n\ \ Opens\ three\ cards\ from\ the\ deck\ if\ available.\n\ \ @return\ true\ if\ the\ cards\ are\ available\ in\ the\ deck;\ false\ otherwise.\n
+numComments=8

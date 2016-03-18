@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.params=game\ gameModel
+comment0.target=ComputerZetPlayer(ZetGame,\ ZetGameModel)
+comment1.params=
+comment1.target=void\ start()
+comment2.params=
+comment2.target=void\ stop()
+comment3.params=
+comment3.target=int\ getScore()
+comment4.params=score
+comment4.target=void\ setScore(int)
+comment5.params=
+comment5.target=void\ declareZet()
+comment5.text=\n\ \ Called\ when\ this\ player\ has\ found\ a\ set.\n
+comment6.params=e
+comment6.target=void\ stateChanged(javax.swing.event.ChangeEvent)
+comment6.text=\n\ \ Handles\ speed\ slider\ events\n
+comment7.params=e
+comment7.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment7.text=\n\ \ Handles\ clock1\ and\ clock2\ events\n
+numComments=8

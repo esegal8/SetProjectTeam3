@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Deck()
+comment1.params=numCard
+comment1.target=Deck(int)
+comment2.params=
+comment2.target=int\ getNumCards()
+comment3.params=
+comment3.target=boolean\ isEmpty()
+comment4.params=a
+comment4.target=void\ setDeck(java.util.ArrayList)
+comment5.params=c
+comment5.target=void\ add(Card)
+comment6.params=
+comment6.target=Card\ takeTop()
+comment7.params=
+comment7.target=void\ shuffle()
+comment8.params=
+comment8.target=void\ sort()
+comment9.params=
+comment9.target=java.lang.String\ toString()
+numComments=10

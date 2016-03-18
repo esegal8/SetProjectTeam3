@@ -1,0 +1,29 @@
+#BlueJ class context
+comment0.params=
+comment0.target=ZetTable()
+comment0.text=\n\ \ Creates\ a\ new\ deck\ and\ opens\ dfltOpenCards\ cards.\n
+comment1.params=
+comment1.target=int\ cardsInDeck()
+comment1.text=\n\ \ Returns\ the\ number\ of\ cards\ left\ in\ the\ deck.\n\ \ @return\ the\ number\ of\ cards\ left\ in\ the\ deck.\n
+comment2.params=i
+comment2.target=ZetCard\ getOpenCard(int)
+comment2.text=\n\ \ Returns\ the\ open\ card\ with\ a\ given\ index.\ If\ the\ index\ is\ out\ of\ bounds\n\ \ or\ the\ card\ with\ this\ index\ is\ not\ open,\ returns\ null.\n\ \ @return\ the\ open\ card\ with\ a\ given\ index,\ or\ null\ if\ the\ index\n\ \ is\ out\ of\ bounds.\n
+comment3.params=
+comment3.target=boolean\ enoughOpen()
+comment3.text=\n\ \ Indicates\ whether\ there\ is\ a\ sufficient\ number\ of\ open\ cards.\n\ \ @return\ true\ if\ numOpenCards\ >\=\ dfltOpenCards;\ false\ otherwise.\n
+comment4.params=
+comment4.target=int[]\ findZet()
+comment4.text=\n\ \ Finds\ a\ "set"\ in\ the\ open\ cards.\n\ \ @return\ an\ array\ of\ the\ indices\ of\ the\ three\ "set"\ cards,\n\ \ or\ null\ if\ no\ sets\ are\ found.\n
+comment5.params=
+comment5.target=boolean\ open3Cards()
+comment5.text=\n\ \ Opens\ three\ cards\ from\ the\ deck\ if\ three\ cards\ are\ available\ in\ the\ deck.\n\ \ @return\ true\ if\ the\ cards\ are\ opened;\ false\ otherwise.\n
+comment6.params=indices
+comment6.target=void\ remove3Cards(int[])
+comment6.text=\n\ \ Removes\ three\ cards\ with\ given\ indices\ from\ the\ open\ cards.\n\ \ @precondition\ The\ cards\ with\ indices[0],\ indices[1],\ indices[2]\ are\ open.\n
+comment7.params=
+comment7.target=void\ compactOpenCards()
+comment7.text=\n\ \ If\ there\ are\ gaps\ in\ the\ first\ dfltOpenCards\ and\ some\ open\ cards\n\ \ beyond\ dfltOpenCards,\ the\ latter\ are\ moved\ to\ fill\ the\ gaps.\n
+comment8.params=
+comment8.target=java.lang.String\ toString()
+comment8.text=\n\ \ Returns\ a\ string\ representation\ of\ this\ "set\ table".\n\ \ @return\ a\ string\ that\ lists\ all\ the\ open\ cards\ (including\ null\ cards)\n\ \ followed\ by\ an\ '\\n'\ character,\ and\ finally\ the\ count\ of\ cards\n\ \ left\ in\ the\ deck.representation\ of\ this\ "set\ table".\n\ \ @return\ a\ string\ that\ lists\ all\ the\ open\ card\n
+numComments=9

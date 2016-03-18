@@ -2,22 +2,25 @@
 import java.util.*;
 public class ZetDeck extends Deck
 {
-    private List<Card> deck = new ArrayList<Card>();
+    private ArrayList<Card> deck = new ArrayList<Card>();
     
     public ZetDeck()
     {
-        for (int x=0;x<3;x++)
+        Card c;
+        for (int x=1;x<4;x++)
         {
-            for(int y=0;y<3;y++)
+            for(int y=1;y<4;y++)
             {
-                for(int z=0;z<3;z++)
+                for(int z=1;z<4;z++)
                 {
-                    for(int p=0;p<3;p++)
+                    for(int p=1;p<4;p++)
                     {
-                        deck.add(ZetCard(x,y,z,p));
+                        c = new ZetCard(x,y,z,p);
+                        deck.add(c);
                     }
                 }
             }
         }
+        setDeck(deck);
     }
 }

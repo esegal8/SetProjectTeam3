@@ -38,6 +38,10 @@ public class Deck
             return true;
         return false;
     }
+    public void setDeck(ArrayList<Card> a)
+    {
+        deck = a;
+    }
     public void add (Card c)
     {
         deck.add(0,c);

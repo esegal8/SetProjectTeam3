@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ start()
+comment0.text=\n\ \ Sets\ this\ player\ into\ the\ LOOKING\ state.\n
+comment1.params=
+comment1.target=void\ stop()
+comment1.text=\n\ \ Sets\ this\ player\ into\ the\ IDLE\ state\n
+comment2.params=
+comment2.target=int\ getScore()
+comment2.text=\n\ \ Returns\ this\ player's\ score.\n\ \ @return\ this\ player's\ score.\n
+comment3.params=score
+comment3.target=void\ setScore(int)
+comment3.text=\n\ \ Sets\ this\ player's\ score.\n\ \ @param\ score\ the\ new\ score\ value.\n
+numComments=4

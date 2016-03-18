@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.params=model
+comment0.target=ZetTableDisplay(ZetGameModel)
+comment1.params=model\ obj
+comment1.target=void\ update(java.util.Observable,\ java.lang.Object)
+comment10.params=g\ card
+comment10.target=void\ drawDiamond(java.awt.Graphics,\ ZetCard)
+comment11.params=g\ xs1\ xs2\ y
+comment11.target=void\ drawStripes(java.awt.Graphics,\ int[],\ int[],\ int)
+comment2.params=g
+comment2.target=void\ paintComponent(java.awt.Graphics)
+comment3.params=x\ y
+comment3.target=int\ getCardLocation(int,\ int)
+comment3.text=\n\ \ Returns\ the\ index\ of\ the\ open\ card\ that\ contains\ x,\ y.\n\ \ called\ from\ humanZetPlayer's\ mouse\ handler.\n\ \ @param\ x\ x-coordinate\ of\ the\ point.\n\ \ @param\ y\ y-coordinate\ of\ the\ point.\n\ \ @return\ the\ index\ of\ the\ open\ card\ that\ contains\ x,\ y,\ or\ -1\ if\ (x,\ y)\ is\ not\ in\ a\ card.\n
+comment4.params=g\ x\ y
+comment4.target=void\ drawPicked(java.awt.Graphics,\ int,\ int)
+comment5.params=g\ x\ y\ card
+comment5.target=void\ drawCard(java.awt.Graphics,\ int,\ int,\ ZetCard)
+comment6.params=g\ x\ y\ nCards
+comment6.target=void\ drawDeck(java.awt.Graphics,\ int,\ int,\ int)
+comment7.params=g\ x\ y\ card
+comment7.target=void\ drawSymbol(java.awt.Graphics,\ int,\ int,\ ZetCard)
+comment8.params=g\ card
+comment8.target=void\ drawOval(java.awt.Graphics,\ ZetCard)
+comment9.params=g\ card
+comment9.target=void\ drawSquiggle(java.awt.Graphics,\ ZetCard)
+numComments=12
